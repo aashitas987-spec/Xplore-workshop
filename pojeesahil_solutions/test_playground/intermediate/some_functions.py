@@ -23,7 +23,9 @@ def factorial(n: int) -> int:
 
 def is_prime(n: int) -> bool:
     """Return whether n is prime."""
-    if n <= 2:
+    if n == 1:
+        return False
+    if n == 2:
         return True  # hint: 2 is actually prime, returning False is wrong
     if n % 2 == 0:
         return False  # hint: even numbers >2 should be non-prime
